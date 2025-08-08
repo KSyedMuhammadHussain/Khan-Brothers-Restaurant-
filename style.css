@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #faf4df;
+    color: #511d0d;
+}
+
+header {
+    background-color: #faf4df;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1cda8;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px 40px 5px 40px;
+}
+
+.logo img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.top-right {
+    text-align: right;
+    font-size: 14px;
+}
+
+.top-right a {
+    color: #602218;
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 5px;
+}
+.social-icons img {
+    width: 18px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+nav {
+    background: none;
+    padding: 10px 40px;
+    font-size: 18px;
+}
+
+nav a {
+    color: #4d230a;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #b38131;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    background-color: #fffbe2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.10);
+    z-index: 2;
+}
+.dropdown-content a {
+    display: block;
+    padding: 5px 16px;
+    color: #2e1b00;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #f7e2b0;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px 10vw;
+    gap: 40px;
+}
+
+.left-img img {
+    max-width: 340px;
+    border-radius: 8px;
+    border: 2px solid #e1cda8;
+    background: #fff7de;
+    box-shadow: 0 4px 18px rgba(100,20,0,0.08);
+}
+
+.welcome-card {
+    background: url('YOUR_SCROLL_IMG.png') no-repeat center/cover;
+    padding: 40px 30px 40px 30px;
+    width: 420px;
+    min-height: 340px;
+    box-shadow: 0 2px 8px rgba(100,20,0,0.10);
+    color: #470d0d;
+    font-size: 16px;
+    text-align: center;
+}
+
+.welcome-card h2 {
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    color: #672a0c;
+}
+
+.welcome-card button {
+    margin-top: 20px;
+    padding: 10px 28px;
+    background-color: #fed138;
+    border: none;
+    color: #581501;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(200,150,20,0.10);
+    transition: background 0.2s;
+}
+.welcome-card button:hover {
+    background-color: #f7b414;
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin: 20px 4vw;
+    }
+    .welcome-card {
+        width: 98vw;
+        min-width: unset;
+    }
+}
+footer {
+    background-color: #faf4df;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #511d0d;
+}
+footer a {
+    color: #602218;
+    text-decoration: underline;
+}

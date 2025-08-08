@@ -133,6 +133,24 @@ nav a:hover {
 .welcome-card button:hover {
     background-color: #f7b414;
 }
+.menu-section {
+    margin: 20px 0;
+}
+.menu-section h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu-section ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.menu-section ul li:last-child {
+    border-bottom: none;
+}
 
 @media (max-width: 900px) {
     .main-content {

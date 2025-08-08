@@ -4,6 +4,51 @@
     <meta charset="UTF-8">
     <title>Khan Brothers Restaurant Menu</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fef4dd;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            text-align: center;
+            background-color: #a34c00;
+            color: white;
+            padding: 10px 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* allows wrapping on small screens */
+            padding: 20px;
+        }
+
+        .menu-section {
+            width: 30%;
+            background-color: #fff6e0;
+            border: 2px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+        }
+
+        .menu-section h2 {
+            color: #4b1e00;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,15 +56,77 @@
     </header>
     <main>
         <section class="menu-section">
-            <h2>Our Specialties</h2>
+            <h2>Non Veg Starters</h2>
             <ul>
-                <li>Biryani</li>
+                <li>Chilli Chicken</li>
+                <li>Chicken Manchurian</li>
+                <li>Garlic Chicken</li>
+                <li>Pepper Chicken</li>
+                <li>Spicy Fried Chicken</li>
+                <li>Crispy Fried Chicken</li>
+                <li>Dragon Chicken</li>
+                <li>Chicken 65</li>
+                <li>Guntur Chicken</li>
+                <li>Chicken Mejestic</li>
+                <li>Lemon Chicken</li>
+                <li>Ginger Chicken</li>
                 <li>Kebabs</li>
-                <li>Curries</li>
-                <li>Desserts</li>
             </ul>
         </section>
+
+        <section class="menu-section">
+            <h2>Chicken Curries</h2>
+            <ul>
+                <li>Chicken Curry</li>
+                <li>Butter Chicken</li>
+                <li>Methi Chicken</li>
+                <li>Hyderabadi Chicken</li>
+                <li>Panjabi Chicken</li>
+                <li>Mughlai Chicken</li>
+                <li>Kadai Chicken</li>
+                <li>Guntur Chicken</li>
+            </ul>
+        </section>
+
+        <section class="menu-section">
+            <h2>Fish Items</h2>
+            <ul>
+                <li>Fish Curry</li>
+                <li>Fish Pepper Dries</li>
+                <li>Fish Chilli</li>
+                <li>Apollo Fish</li>
+                <li>Garlic Fish</li>
+                <li>Fish 65</li>
+                <li>Fish Kabab</li>
+            </ul>
+        </section>
+        <section class="menu-section">
+            <h2>Dum Biryani</h2>
+            <ul>
+                <li>Chicken Dum Biryani</li>
+                <li>Mini Dum Biryani</li>
+                <li>Vegetable Dum Biryani</li>
+                <li>Fish Biryani</li>
+                <li>Special Biryani</li>
+            </ul>
+        </section>
+        <section class="menu-section">
+            <h2>Tandoori Items</h2>
+            <ul>
+                <li>Tandoori Chicken Full</li>
+                <li>Tandoori Chicken Half</li>
+            </ul>
+        </section>
+        <section class="menu-section">
+            <h2>Lollipop</h2>
+            <ul>
+                <li>Chicken Lollipop</li>
+                <li>Lollipop Semi Grey</li>
+            </ul>
+        </section>
+        
     </main>
+
     <footer>
         <p>&copy; 2023 Khan Brothers Restaurant. All rights reserved.</p>
     </footer>

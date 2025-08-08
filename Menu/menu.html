@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             background-color: #fef4dd;
             margin: 0;
             padding: 0;
@@ -22,7 +22,7 @@
         main {
             display: flex;
             justify-content: space-around;
-            flex-wrap: wrap; /* allows wrapping on small screens */
+            flex-wrap: wrap;
             padding: 20px;
         }
 
@@ -41,8 +41,38 @@
         }
 
         ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        /* ✅ Style for bordered menu items */
+        ul li {
+            border: 2px double #a0522d;
+            background-color: #fff8dc;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            box-shadow: inset 0 0 3px #e1c699;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        ul li:hover {
+            background-color: #fff3cd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .item {
+            font-weight: 500;
+        }
+
+        .price {
+            font-weight: bold;
+            min-width: 50px;
+            text-align: right;
+            color: #4b1e00;
         }
 
         footer {
@@ -57,41 +87,41 @@
     <main>
         <section class="menu-section">
             <h2>Non Veg Starters</h2>
-            <ul>
-                <li>Chilli Chicken</li>
-                <li>Chicken Manchurian</li>
-                <li>Garlic Chicken</li>
-                <li>Pepper Chicken</li>
-                <li>Spicy Fried Chicken</li>
-                <li>Crispy Fried Chicken</li>
-                <li>Dragon Chicken</li>
-                <li>Chicken 65</li>
-                <li>Guntur Chicken</li>
-                <li>Chicken Mejestic</li>
-                <li>Lemon Chicken</li>
-                <li>Ginger Chicken</li>
-                <li>Kebabs</li>
+            <ul class="menu-list">
+                <li><span class="item">Chilli Chicken</span><span class="price">190/-</span></li>
+                <li><span class="item">Chicken Manchurian</span><span class="price">190/-</span></li>
+                <li><span class="item">Garlic Chicken</span><span class="price">190/-</span></li>
+                <li><span class="item">Pepper Chicken</span><span class="price">190/-</span></li>
+                <li><span class="item">Spicy Fried Chicken</span><span class="price">220/-</span></li>
+                <li><span class="item">Crispy Fried Chicken</span><span class="price">220/-</span></li>
+                <li><span class="item">Dragon Chicken</span><span class="price">190/-</span></li>
+                <li><span class="item">Chicken 65</span><span class="price">190/-</span></li>
+                <li><span class="item">Guntur Chicken</span><span class="price">230/-</span></li>
+                <li><span class="item">Chicken Majestic</span><span class="price">240/-</span></li>
+                <li><span class="item">Lemon Chicken</span><span class="price">290/-</span></li>
+                <li><span class="item">Ginger Chicken</span><span class="price">190/-</span></li>
+                <li><span class="item">Kebabs</span><span class="price">100/-</span></li>
             </ul>
         </section>
 
         <section class="menu-section">
             <h2>Chicken Curries</h2>
             <ul>
-                <li>Chicken Curry</li>
-                <li>Butter Chicken</li>
-                <li>Methi Chicken</li>
-                <li>Hyderabadi Chicken</li>
-                <li>Panjabi Chicken</li>
-                <li>Mughlai Chicken</li>
-                <li>Kadai Chicken</li>
-                <li>Guntur Chicken</li>
+                <li><span class="item">Chicken Curry</span><span class="price">180/-</span></li>
+                <li><span class="item">Butter Chicken</span><span class="price">190/-</span></li>
+                <li><span class="item">Methi Chicken</span><span class="price">180/-</span></li>
+                <li><span class="item">Hyderabadi Chicken</span><span class="price">180/-</span></li>
+                <li><span class="item">Panjabi Chicken</span><span class="price">190/-</span></li>
+                <li><span class="item">Mughlai Chicken</span><span class="price">190/-</span></li>
+                <li><span class="item">Kadai Chicken</span><span class="price">180/-</span></li>
+                <li><span class="item">Guntur Chicken</span><span class="price">200/-</span></li>
             </ul>
         </section>
 
         <section class="menu-section">
             <h2>Fish Items</h2>
             <ul>
-                <li>Fish Curry</li>
+                <li><span>Fish Curry</li>
                 <li>Fish Pepper Dries</li>
                 <li>Fish Chilli</li>
                 <li>Apollo Fish</li>
@@ -100,6 +130,7 @@
                 <li>Fish Kabab</li>
             </ul>
         </section>
+
         <section class="menu-section">
             <h2>Dum Biryani</h2>
             <ul>
@@ -110,6 +141,7 @@
                 <li>Special Biryani</li>
             </ul>
         </section>
+
         <section class="menu-section">
             <h2>Tandoori Items</h2>
             <ul>
@@ -117,6 +149,7 @@
                 <li>Tandoori Chicken Half</li>
             </ul>
         </section>
+
         <section class="menu-section">
             <h2>Lollipop</h2>
             <ul>
@@ -124,7 +157,6 @@
                 <li>Lollipop Semi Grey</li>
             </ul>
         </section>
-        
     </main>
 
     <footer>

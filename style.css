@@ -148,12 +148,8 @@ nav a:hover {
 }
 footer {
     background-color: #faf4df;
-    padding: 20px 40px;
+    padding: 10px 10px;
     text-align: center;
     font-size: 14px;
     color: #511d0d;
-}
-footer a {
-    color: #602218;
-    text-decoration: underline;
 }
